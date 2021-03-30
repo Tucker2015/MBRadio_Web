@@ -1,24 +1,36 @@
 .container {
   min-height: 100vh;
+  margin: 0;
   padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #132137;
 }
 
 .main {
-  padding: 5rem 0;
+  padding: 2rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
+.cards {
+  position: relative;
+  display: block;
+  flex-direction: column;
+}
+.tabs {
+  display: flex;
+  font-size: 1.3rem;
+  width: 100%;
+  color: #fff;
+}
 .footer {
   width: 100%;
-  height: 100px;
+  height: 70px;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
@@ -29,17 +41,23 @@
   margin-left: 0.5rem;
 }
 
-.footer a {
+.footerText {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #fff;
+  font-size: 1.2rem;
 }
 
-.title a {
-  color: #0070f3;
+.title {
+  color: #fff;
   text-decoration: none;
 }
-
+.quote {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.7rem;
+}
 .title a:hover,
 .title a:focus,
 .title a:active {
@@ -50,6 +68,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  font-weight: 700;
 }
 
 .title,
@@ -118,5 +137,16 @@
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+  .title {
+    margin: 0;
+    line-height: 1.15;
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  .quote {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
   }
 }
