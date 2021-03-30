@@ -5,27 +5,31 @@ import Link from 'next/link'
 const NavBar = () => {
 
   return (
-    <div className="navbar-fixed">
-      <nav>
-        <div className="nav-wrapper #000000 black sticky">
-          <Link href="/">
-            <a className="brand-logo left">MBR</a></Link>
-
-          <ul id="nav-mobile" className="right">
-            <li className={styles.mobilelinks}><Link href="/posts/team"><a>Team</a></Link></li>
-            <li className={styles.mobilelinks}><Link href="/posts/team"><a>Live Video</a></Link></li>
-            <li className={styles.mobilelinks}><Link href="/posts/team"><a>Resources</a></Link></li>
-          </ul>
-          <a href="#" data-target="mobile-demo" className="sidenav-trigger right"><i className="material-icons">menu</i></a>
+    <>
+      <nav className="navbar navbar-expand-lg navbar-dark sticky-top text-light" style={{ backgroundColor: '#000' }}>
+        <div className="container-fluid">
+          <a className="navbar-brand" href="#">Military Broadcast Radio</a>
+          <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
-      <ul className="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
-      </ul>
-    </div>
+    </>
   )
 
 }
